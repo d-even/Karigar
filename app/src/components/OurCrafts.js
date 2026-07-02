@@ -130,7 +130,7 @@ export default function OurCrafts() {
         <div className="craft-banner">
           <img src={coffeeHouse} alt="Coffee House storefront" />
           <span className="craft-badge-script">Coffee House</span>
-          <a className="visit-btn visit-btn--ghost" href="#visit">
+          <a className="visit-btn visit-btn--ghost" href="https://coffee-house-saga.vercel.app/">
             <span>VISIT NOW</span>
             <ArrowIcon />
           </a>
@@ -139,14 +139,14 @@ export default function OurCrafts() {
         <div className="craft-grid">
           <div className="craft-card" style={{ '--progress': stepProgress(0) }}>
             <img src={jetSetGo} alt="JetSetGo travel poster" />
-            <a className="visit-btn" href="#visit">
+            <a className="visit-btn" href="https://jet-set-go-j2he-ten.vercel.app/">
               <span>VISIT NOW</span>
               <ArrowIcon />
             </a>
           </div>
           <div className="craft-card" style={{ '--progress': stepProgress(1) }}>
             <img src={tretha} alt="Tretha product packaging" />
-            <a className="visit-btn" href="#visit">
+            <a className="visit-btn" href="https://tretha-bio.vercel.app/">
               <span>VISIT NOW</span>
               <ArrowIcon />
             </a>

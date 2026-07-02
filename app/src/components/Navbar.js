@@ -3,13 +3,13 @@ import logo from '../public/logo.png';
 import { WhatsAppIcon, InstagramIcon } from './icons';
 
 const WHATSAPP_NUMBER = '8928877124';
-const INSTAGRAM_HANDLE = 'karagir.designs';
+const INSTAGRAM_HANDLE = 'karagir_crafts';
 
 const TITLE_SWAP_MS = 1500;
 
 const NAV_LINKS = [
   { label: 'Our Crafts', href: '#crafts' },
-  { label: 'Diciplines', href: '#deciplines' },
+  { label: 'Diciplines', href: '#diciplines' },
   { label: 'Reviews', href: '#reviews' },
   { label: 'Lets Craft Now', href: '#start' },
 ];

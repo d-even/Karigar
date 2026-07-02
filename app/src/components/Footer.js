@@ -3,7 +3,7 @@ import logo from '../public/logo.png';
 import { WhatsAppIcon, InstagramIcon } from './icons';
 
 const WHATSAPP_NUMBER = '8928877124';
-const INSTAGRAM_HANDLE = 'karagir.designs';
+const INSTAGRAM_HANDLE = 'karagir_crafts';
 
 export default function Footer() {
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
 
         <div className="footer-col">
           <h4>Contact</h4>
-          <a href="mailto:hello@karagir.design">hello@karagir.design</a>
+          <a href="mailto:karagirdesign@gmail.com">karagirdesign@gmail.com</a>
           <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer">
             +{WHATSAPP_NUMBER}
           </a>
