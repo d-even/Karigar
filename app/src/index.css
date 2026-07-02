@@ -1,0 +1,39 @@
+:root {
+  --color-navbar: #fff8b1;
+  --color-cream: #fffaca;
+  --color-orange-light: #ffc98b;
+  --color-orange-deep: #ffb284;
+  --color-footer: #c6c09c;
+  --color-black: #14120f;
+  --color-white: #ffffff;
+  --color-red: #7c1f1f;
+
+  --font-display: 'Abril Fatface', serif;
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-devanagari: 'Yatra One', 'Poppins', cursive;
+  --font-script: 'Great Vibes', cursive;
+
+  --nav-h: 5.75rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-cream);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
