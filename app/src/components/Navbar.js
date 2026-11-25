@@ -9,6 +9,7 @@ const TITLE_SWAP_MS = 1500;
 
 const NAV_LINKS = [
   { label: 'Our Crafts', href: '#crafts' },
+  { label: 'All Projects', href: '#/our-craft' },
   { label: 'Diciplines', href: '#diciplines' },
   { label: 'Reviews', href: '#reviews' },
   { label: 'Lets Craft Now', href: '#start' },

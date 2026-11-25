@@ -20,6 +20,7 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Explore</h4>
           <a href="#crafts">Our Crafts</a>
+          <a href="#/our-craft">All Projects</a>
           <a href="#diciplines">Diciplines</a>
           <a href="#reviews">Reviews</a>
           <a href="#start">Lets Craft Now</a>

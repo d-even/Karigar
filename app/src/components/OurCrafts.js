@@ -152,6 +152,11 @@ export default function OurCrafts() {
             </a>
           </div>
         </div>
+
+        <a className="view-all-btn" href="#/our-craft">
+          <span>VIEW ALL CRAFTS</span>
+          <ArrowIcon />
+        </a>
       </div>
     </section>
   );
