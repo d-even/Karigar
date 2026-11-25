@@ -189,17 +189,12 @@ ul {
 }
 
 /* ---------- Navbar pill links ---------- */
-.navbar-pill {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.navbar-right {
   display: flex;
   align-items: center;
-  border: 1.5px solid var(--color-orange-deep);
-  border-radius: 999px;
-  padding: 0.35rem 0.5rem;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
 }
+
 
 .navbar-pill-link {
   position: relative;
@@ -207,10 +202,11 @@ ul {
   border: 0;
   cursor: pointer;
   font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
   color: var(--color-black);
-  padding: 0.45rem 1.75rem;
+  padding: 0.45rem 1.4rem;
 }
 
 .navbar-pill-link::after {
@@ -320,7 +316,7 @@ button.navbar-dropdown-item {
 }
 
 .contact-title {
-  font-family: var(--font-script);
+  font-family: var(--font);
   font-weight: 400;
   font-size: clamp(2.6rem, 6vw, 3.4rem);
   line-height: 1.1;
@@ -1086,13 +1082,7 @@ button.navbar-dropdown-item {
   min-height: calc(100vh - var(--nav-h));
   padding: clamp(2rem, 5vw, 3.5rem) clamp(1.25rem, 6vw, 4.5rem) clamp(3rem, 7vw, 5rem);
   background-color: var(--color-cream);
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent 0,
-    transparent 31px,
-    rgba(198, 160, 110, 0.22) 31px,
-    rgba(198, 160, 110, 0.22) 32px
-  );
+
 }
 
 .oc-back {
@@ -1191,20 +1181,6 @@ button.navbar-dropdown-item {
   margin: 0 0 1rem;
 }
 
-.oc-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.1rem;
-}
-
-.oc-tags li {
-  font-family: var(--font-sans);
-  font-size: 0.78rem;
-  padding: 0.35rem 0.85rem;
-  border-radius: 999px;
-  background: rgba(255, 201, 139, 0.35);
-}
 
 .oc-links {
   display: flex;

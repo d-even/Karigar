@@ -2,29 +2,36 @@ import React from 'react';
 import coffeeHouse from '../public/coffeHouse.jpg';
 import jetSetGo from '../public/JetSetGo.png';
 import tretha from '../public/Tretha.png';
+import dnyanmandir from '../public/dnyanmandir.png';
 
-// Add a new object here to show another project on the Our Craft page.
-// `github` is optional — leave it out and only the live link is shown.
+
 const PROJECTS = [
   {
     title: 'Coffee House',
     description: 'A warm, aroma-rich website for a neighbourhood coffee shop.',
     image: coffeeHouse,
-    tags: ['React', 'CSS3', 'Tailwind'],
+
     live: 'https://coffee-house-saga.vercel.app/',
+  },
+  {
+    title: 'Dnyanmandir Vidyalaya',
+    description: 'We build custom coded proffesional school website.',
+    image: dnyanmandir,
+ 
+    live: 'https://www.dnyanmandirvidyalaya.com/',
   },
   {
     title: 'JetSetGo',
     description: 'Travel booking website to discover destinations and plan trips.',
     image: jetSetGo,
-    tags: ['React', 'Travel', 'UI/UX'],
+ 
     live: 'https://jet-set-go-j2he-ten.vercel.app/',
   },
   {
     title: 'Tretha',
     description: 'E-Commerce website for selling skin care products.',
     image: tretha,
-    tags: ['E-Commerce', 'React', 'Branding'],
+
     live: 'https://tretha-bio.vercel.app/',
   },
 ];
@@ -46,12 +53,10 @@ function Squiggle() {
 export default function OurCraftPage() {
   return (
     <section className="our-craft-page">
-      <a className="oc-back" href="#/">
-        &larr; Back to home
-      </a>
+   
       <h1 className="oc-heading">
         Our Craft
-        <Squiggle />
+       
       </h1>
 
       <div className="oc-grid">
@@ -63,11 +68,7 @@ export default function OurCraftPage() {
             <div className="oc-body">
               <h2 className="oc-title">{p.title}</h2>
               <p className="oc-desc">{p.description}</p>
-              <ul className="oc-tags">
-                {p.tags.map((t) => (
-                  <li key={t}>{t}</li>
-                ))}
-              </ul>
+
               <div className="oc-links">
                 {p.github && (
                   <a href={p.github} target="_blank" rel="noopener noreferrer">

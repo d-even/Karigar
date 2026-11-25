@@ -59,7 +59,7 @@ function App() {
     const target = id && !id.startsWith('/') ? document.getElementById(id) : null;
     if (target) target.scrollIntoView();
     else window.scrollTo(0, 0);
-  }, [isOurCraft]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [hash]);
 
   return (
     <div className="App">
