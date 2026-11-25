@@ -9,12 +9,13 @@ const TITLE_SWAP_MS = 1500;
 
 const NAV_LINKS = [
   { label: 'Our Crafts', href: '#crafts' },
+  { label: 'All Projects', href: '#/our-craft' },
   { label: 'Diciplines', href: '#diciplines' },
   { label: 'Reviews', href: '#reviews' },
   { label: 'Lets Craft Now', href: '#start' },
 ];
 
-export default function Navbar() {
+export default function Navbar({ onContact }) {
   const [open, setOpen] = useState(false);
   const [lang, setLang] = useState('en');
   const menuRef = useRef(null);
@@ -52,6 +53,16 @@ export default function Navbar() {
         </span>
       </div>
 
+      <nav className="navbar-pill" aria-label="Primary">
+        <a className="navbar-pill-link" href="#/our-craft">
+          Our Crafts
+        </a>
+        <span className="navbar-pill-sep" aria-hidden="true" />
+        <button type="button" className="navbar-pill-link" onClick={onContact}>
+          Contact
+        </button>
+      </nav>
+
       <div className="navbar-social" ref={menuRef}>
         <button
           type="button"
@@ -77,6 +88,16 @@ export default function Navbar() {
                   <span>{link.label}</span>
                 </a>
               ))}
+              <button
+                type="button"
+                className="navbar-dropdown-item navbar-dropdown-link"
+                onClick={() => {
+                  setOpen(false);
+                  onContact();
+                }}
+              >
+                <span>Contact</span>
+              </button>
             </div>
 
             <div className="navbar-dropdown-divider" />
