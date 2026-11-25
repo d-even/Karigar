@@ -189,11 +189,13 @@ ul {
 }
 
 /* ---------- Navbar pill links ---------- */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
 .navbar-pill {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   border: 1.5px solid var(--color-orange-deep);
@@ -206,11 +208,12 @@ ul {
   background: none;
   border: 0;
   cursor: pointer;
-  font-family: var(--font-sans);
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
   color: var(--color-black);
-  padding: 0.45rem 1.75rem;
+  padding: 0.45rem 1.4rem;
 }
 
 .navbar-pill-link::after {

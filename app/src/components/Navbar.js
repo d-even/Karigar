@@ -53,14 +53,19 @@ export default function Navbar({ onContact }) {
         </span>
       </div>
 
+      <div className="navbar-right">
       <nav className="navbar-pill" aria-label="Primary">
-        <a className="navbar-pill-link" href="#/our-craft">
-          Our Crafts
+        <a className="navbar-pill-link" href="#/" onClick={() => window.scrollTo(0, 0)}>
+          Home
         </a>
         <span className="navbar-pill-sep" aria-hidden="true" />
         <button type="button" className="navbar-pill-link" onClick={onContact}>
           Contact
         </button>
+        <span className="navbar-pill-sep" aria-hidden="true" />
+        <a className="navbar-pill-link" href="#/our-craft">
+          Projects
+        </a>
       </nav>
 
       <div className="navbar-social" ref={menuRef}>
@@ -124,6 +129,7 @@ export default function Navbar({ onContact }) {
             </div>
           </div>
         )}
+      </div>
       </div>
     </header>
   );
