@@ -3,7 +3,7 @@ import logo from '../public/logo.png';
 import { WhatsAppIcon, InstagramIcon } from './icons';
 
 const WHATSAPP_NUMBER = '8928877124';
-const INSTAGRAM_HANDLE = 'karagir_crafts';
+const INSTAGRAM_HANDLE = 'karagir.studio';
 
 const TITLE_SWAP_MS = 1500;
 

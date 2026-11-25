@@ -14,10 +14,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Hero />
-      <Marquee />
+      <Hero />      
+      <Marquee single/>
       <OurCrafts />
-      <WhyAreWe />
+      {/* <WhyAreWe /> */}
       <Capabilities />
 
       <div className="section-divider" aria-hidden="true">
