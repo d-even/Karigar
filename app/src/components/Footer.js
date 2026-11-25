@@ -5,7 +5,7 @@ import { WhatsAppIcon, InstagramIcon } from './icons';
 const WHATSAPP_NUMBER = '8928877124';
 const INSTAGRAM_HANDLE = 'karagir.studio';
 
-export default function Footer() {
+export default function Footer({ onContact }) {
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -28,6 +28,9 @@ export default function Footer() {
 
         <div className="footer-col">
           <h4>Contact</h4>
+          <button type="button" className="footer-link-btn" onClick={onContact}>
+            Say hello &rarr;
+          </button>
           <a href="mailto:karagirdesign@gmail.com">karagirdesign@gmail.com</a>
           <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer">
             +{WHATSAPP_NUMBER}

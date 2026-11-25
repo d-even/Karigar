@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -11,6 +11,7 @@ import Reviews from './components/Reviews';
 import CraftNow from './components/CraftNow';
 import Footer from './components/Footer';
 import OurCraftPage from './pages/OurCraftPage';
+import ContactModal from './components/ContactModal';
 
 const OUR_CRAFT_ROUTE = '#/our-craft';
 
@@ -47,6 +48,9 @@ function Home() {
 function App() {
   const hash = useHash();
   const isOurCraft = hash === OUR_CRAFT_ROUTE;
+  const [contactOpen, setContactOpen] = useState(false);
+  const openContact = useCallback(() => setContactOpen(true), []);
+  const closeContact = useCallback(() => setContactOpen(false), []);
 
   // After switching pages, jump to the requested section (e.g. #reviews)
   // or to the top for a page route.
@@ -59,9 +63,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar onContact={openContact} />
       {isOurCraft ? <OurCraftPage /> : <Home />}
-      <Footer />
+      <Footer onContact={openContact} />
+      <ContactModal open={contactOpen} onClose={closeContact} />
     </div>
   );
 }
