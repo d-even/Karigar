@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Marquee from './components/Marquee';
 import OurCrafts from './components/OurCrafts';
-import WhyAreWe from './components/WhyAreWe';
+
 import Capabilities from './components/Capabilities';
 
 import Reviews from './components/Reviews';

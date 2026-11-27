@@ -36,19 +36,7 @@ const PROJECTS = [
   },
 ];
 
-function Squiggle() {
-  return (
-    <svg className="oc-squiggle" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
-      <path
-        d="M2 9 C 30 2, 55 2, 80 7 S 135 13, 160 7 S 205 3, 218 6"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="3"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
+
 
 export default function OurCraftPage() {
   return (
