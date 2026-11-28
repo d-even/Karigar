@@ -29,7 +29,7 @@ function Home() {
   return (
     <>
       <Hero />
-      <Marquee single />
+      {/* <Marquee single /> */}
       <OurCrafts />
       {/* <WhyAreWe /> */}
       <Capabilities />
